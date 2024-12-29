@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(223, 223, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+h2 {
+  font-size: 1.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 7px;
+}
+
+.notification {
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  width: 30vw;
+  background-color: #fff;
+  padding: 1.3rem;
+  border-radius: 5px;
+  border-top: 3px solid #ea4d67;
+  box-shadow: 0 10px 25px rgba(52, 87, 220, 0.3);
+  transition: all 0.25s ease;
+}
+
+.notification.show {
+  top: 0px;
+  visibility: visible;
+}
+
+.notification.online {
+  border-color: green;
+}
+
+.icon {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+}
+
+.bi {
+  background-color: red;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.notification.online .icon i {
+  background-color: green;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1.3rem;
+}
+
+button {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: aqua;
+  border: none;
+  margin-top: 20px;
+  margin-left: 1.2rem;
+  font-size: 1rem;
+}
+
+.notification.online .Reconnect{
+  background-color: white;
+  display: none;
+}
